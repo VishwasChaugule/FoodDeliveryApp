@@ -1,19 +1,13 @@
 <div class="container">
   <header>
     <nav>
-      <a href="#">Home</a>
+      <a routerLink="/food-list" routerLinkActive="active" 
+      ariaCurrentWhenActive="page">Home</a>
     </nav>
   </header>
   <main>
-    <div *ngFor="let i of [1,2,3,4,5]">
-      <div class="card">
-        <div class="card-img-top">
-          <img src="../assets/Images/Img{{i}}.jpg" width="250" height="250" alt="Food Image">
-        </div>
-        <div class="card-body">
-          Food Card {{i}}
-        </div>
-      </div>
-    </div>
-  </main> 
+    <router-outlet></router-outlet>
+  </main>
 </div>
+
+
